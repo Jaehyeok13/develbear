@@ -1,0 +1,46 @@
+*{box-sizing:board-box;}
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(-35deg,#1a2a6c,#b21f1f,#fdbb2d);
+}
+
+
+.login-form {
+    width:360px;
+    height:600px;
+    padding:80px 40px;
+    background: #fdfdfd;
+    border-radius: 10px;
+    position:absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;    
+}
+
+.login-form {
+    
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#signup {
+    cursor:pointer;
+    width: auto;
+    border: 1px solid black;
+    padding:5px;
+    text-align: center;
+    vertical-align:top;
+    margin-right: 20px;
+    position: absolute;
+    font-size: 16px;
+}
+
+
+
+body {
+    
+}

@@ -40,21 +40,21 @@
 	</error-page>
 	
 	<!-- 한글 인코딩  -->
-	<filter>
-		<!-- 필터 이름 아무거나 해도 무방 mapping 에서만 제대로 연결 되면 된다. -->
-		<filter-name>encodingFilter</filter-name>	
+		<filter>
+		<!-- 이름은 아무거나 써도 문제 되지 않는다. filter-mapping 맞게 입력 하면 된다.-->
+		<filter-name>encodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
 		<init-param>
-			<!-- encoding 값을 UTF-8 로지정 한다. -->
+			<!-- encoding 값을 UTF-8 로 지정 -->
 			<param-name>encoding</param-name>
 			<param-value>UTF-8</param-value>
 		</init-param>
+	
 	</filter>
-	<!-- 여기서 이제 mapping 으로 아까 작성한 filter-name 을 연결 해준다. -->
-		<filter-mapping>
-			<filter-name>encodingFilter</filter-name>
-			<url-pattern>/*</url-pattern>
-		</filter-mapping>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 	
 	
 	

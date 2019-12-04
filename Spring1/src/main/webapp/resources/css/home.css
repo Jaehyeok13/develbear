@@ -1,0 +1,110 @@
+main {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.maincontain {
+    margin: 20px 0;
+    padding: 10px 10px;
+    min-width: 1200px;
+    border-radius: 30px;
+    background: #fae2f0;
+    display: inline-block;
+    background: #757F9A;
+    background: -webkit-linear-gradient(to top, #D7DDE8, #757F9A);
+    background: linear-gradient(to top, #D7DDE8, #757F9A);
+}
+
+.maincontain p:nth-child(1) {
+    text-align: left;
+    line-height: 5;
+}
+
+.maincontain p span:nth-child(1) {
+    font-size: 100px;
+    font-family: 궁서, Gungsuh, GungSeo;
+}
+.maincontain p span:nth-child(2n) {
+     font-family: 궁서, Gungsuh, GungSeo;
+    font-size: 15px;
+}
+.maincontain p img{
+    
+   padding: 0px 10px; 
+}
+
+.maincontain p b {
+    font-family: 궁서, Gungsuh, GungSeo; 
+    font-size: 20pt;
+}
+
+.subcontain .button {
+    position: relative;
+    float: left;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 20px;
+    padding:10px;
+    font-size: 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 1s;    
+    overflow:hidden;
+}
+.subcontain .button .fa ,.maincontain .button  b{
+    z-index: 1;
+}
+.subcontain .button:hover b{
+    color: aliceblue
+}
+
+.subcontain .button:hover .wave{
+    top: 0; 
+    
+}
+
+.subcontain .button::before{
+   
+}
+
+/*  */
+.subcontain .button .wave {
+    position: absolute;
+    top: calc(100% + 22px); /* top : 0 일 경우 스팬 전체를 가린다.*/
+    left: 0;
+    width:100%;
+    height: 100%;
+/*    background: rgb(72, 173, 232);*/
+    background: #33ccff;
+
+    transition: 1s; /* 애니메이션 효과 들어 갈때*/
+}
+
+.subcontain .button .wave::before{
+    content: '';
+    position: absolute;
+    top: -22px;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    background-image:url(../images/index/wave.png);
+    animation: animate 0.5s linear infinite;
+    
+}
+
+/*위에 선언된 애니메이션 이름을 사용한다.*/
+@keyframes animate{
+    0%{
+        background-position-x:0; 
+     
+    }
+    100%{
+        background-position-x:118px; 
+    }
+}
+
+
+

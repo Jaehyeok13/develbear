@@ -27,17 +27,19 @@ main {
     font-size: 100px;
     font-family: 궁서, Gungsuh, GungSeo;
 }
+
 .maincontain p span:nth-child(2n) {
-     font-family: 궁서, Gungsuh, GungSeo;
+    font-family: 궁서, Gungsuh, GungSeo;
     font-size: 15px;
 }
-.maincontain p img{
-    
-   padding: 0px 10px; 
+
+.maincontain p img {
+
+    padding: 0px 10px;
 }
 
 .maincontain p b {
-    font-family: 궁서, Gungsuh, GungSeo; 
+    font-family: 궁서, Gungsuh, GungSeo;
     font-size: 20pt;
 }
 
@@ -47,64 +49,110 @@ main {
     letter-spacing: 4px;
     text-transform: uppercase;
     margin: 20px;
-    padding:10px;
+    padding: 10px;
     font-size: 30px;
     border: 2px solid black;
     cursor: pointer;
-    transition: 1s;    
-    overflow:hidden;
+    overflow: hidden;
+
 }
-.subcontain .button .fa ,.maincontain .button  b{
+
+.subcontain .button .fa,
+.maincontain .button b {
     z-index: 1;
-}
-.subcontain .button:hover b{
-    color: aliceblue
+    position: relative;
+
 }
 
-.subcontain .button:hover .wave{
-    top: 0; 
-    
+.subcontain .button:hover {
+    border: 2px solid #33ccff;
 }
 
-.subcontain .button::before{
-   
+.subcontain .button:hover b,
+.subcontain .button:hover .fa {
+    color: aliceblue;
 }
+
+.subcontain .button:hover .wave {
+    top: 0;
+}
+
 
 /*  */
 .subcontain .button .wave {
     position: absolute;
-    top: calc(100% + 22px); /* top : 0 일 경우 스팬 전체를 가린다.*/
+    top: calc(100% + 22px);
+    /* top : 0 일 경우 스팬 전체를 가린다.*/
     left: 0;
-    width:100%;
+    width: 100%;
     height: 100%;
-/*    background: rgb(72, 173, 232);*/
+    /*    background: rgb(72, 173, 232);*/
     background: #33ccff;
 
-    transition: 1s; /* 애니메이션 효과 들어 갈때*/
+    transition: 1s;
+    /* 애니메이션 효과 들어 갈때*/
 }
 
-.subcontain .button .wave::before{
+.subcontain .button .wave::before {
     content: '';
     position: absolute;
     top: -22px;
     left: 0;
     width: 100%;
     height: 22px;
-    background-image:url(../images/index/wave.png);
+    background-image: url(../images/index/wave.png);
     animation: animate 0.5s linear infinite;
-    
 }
 
 /*위에 선언된 애니메이션 이름을 사용한다.*/
-@keyframes animate{
-    0%{
-        background-position-x:0; 
-     
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+
     }
-    100%{
-        background-position-x:118px; 
+
+    100% {
+        background-position-x: 118px;
     }
 }
 
+.subcontain2 {
+    min-width: 1200px;
+    display: inline-block;
+    cursor: default;
+    font-family: 궁서, Gungsuh, GungSeo;
+}
 
+.subcontain2 ul li {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: left;
+    margin: 0 30px 0 0;
+}
+.subcontain2 ul {
+    float: left;
+    margin: 0;
+}
 
+.subcontain2 ul li .subheadr {
+    line-height: 30px;
+    font-size: 20px;
+
+}
+
+.subcontain2 ul li .subbutton {
+    cursor: pointer;
+    border: 2px solid black;
+    width: 60px;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+.subcontain2 ul li .subbutton:hover {
+    transition: 2s;
+    color: white;
+    background: #000;
+}

@@ -15,7 +15,7 @@
 		.video-foreground {width: 300%; left: -100%;}
 	}
 	h1 {color: white;}
-	#visual-btn {
+	#visual-btn,#typContain {
 		z-index: 50; color: #fff; font-size: 20px; border: 2px solid #fff;
 		padding: 12px 24px; border-radius: 5px; cursor: pointer; background-color: rgba(0, 0, 0, 0);
 	}
@@ -23,5 +23,5 @@
 		color: #ff6868; font-size: 20px; border: 2px solid #ff6868;
 		padding: 12px 24px; border-radius: 5px; cursor: pointer;
 	}
-	#indexBtn {position: fixed; text-align: center}
+	#indexBtn,#typying {position: fixed; text-align: center}
 	.center {position: absolute; top: 96%; left: 47%; margin: -50px 0 0 -50px;}

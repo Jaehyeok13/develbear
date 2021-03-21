@@ -24,3 +24,9 @@ $(function() {
 		}
 	});
 });
+
+$(function(){
+	$("#listGo").on("click", function(){
+		location.href="ImgPathChange.do";
+	});
+});

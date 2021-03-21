@@ -6,11 +6,11 @@
 <head>
 <meta charset="UTF-8">
 <title>nav</title>
-<link rel="stylesheet" type="text/css" href="resources/css/common/header1.css">
+<link rel="stylesheet" type="text/css" href="resources/css/common/MainMenu.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script src="resources/js/common/menuBar1.js"></script>
+<script src="resources/js/common/MainMenu.js"></script>
 </head>
 <body>
 	<nav id="navcontain">

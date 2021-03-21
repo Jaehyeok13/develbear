@@ -13,9 +13,8 @@
 	</h1>
 	
 	<p class="type_text" style="text-align:center; color:#d5d4f7; font-size:18pt; margin-top:50%;"></p>
-	
 	<div id="indexBtn" class="center">
-		<button id="visual-btn" onclick="javascript:location.href='home.do';">Visit our Site!</button>
+		<button id="visual-btn" onclick="javascript:location.href='home.do';">VISIT MY SITE!</button>
 	</div>
 	
 	<div class="video-background">
@@ -43,7 +42,7 @@
 					showinfo : 0, 		// Hide the video title // 재생 영상에 대한 정보 유무
 					modestbranding : 1, // Hide the Youtube Logo
 					loop : 1, 			// Run the video in a loop // 반복 재생에 대한 여부
-					playlist : 'r7OyqZtVY2A',
+					playlist : 'yx5i-5f83TY',
 					fs : 0, 			// Hide the full screen button
 					cc_load_policy : 0, // Hide closed captions
 					iv_load_policy : 3, // Hide the Video Annotations

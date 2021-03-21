@@ -6,13 +6,15 @@
 <head>
 	<title>DevelBear</title>
 	<link rel="stylesheet" type="text/css" href="resources/css/home.css" >
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<c:import url="common/menueBar1.jsp"/>
+	<c:import url="common/MainMenu.jsp"/>
 	<main>		
 		<div class="maincontain">
-<!--			<p><img data-brackets-id="82" src="https://blogfiles.pstatic.net/MjAxOTEwMThfMjA0/MDAxNTcxMzc1OTYzNTY0.-AjySQo92CyRe26syt7PEwx4oFmq-fWB-aPPp6FpUjgg.yQ7BQg_q4tvp7NbW-pqHLu0vS58DHyVxz-I7zM2EMzAg.PNG.star76855/bear.png?type=w1" align="left"><span data-brackets-id="83">&nbsp;</span></p> -->
-			<p><img data-brackets-id="82" src="resources/images/index/bear.png" align="left"><span data-brackets-id="83">&nbsp;</span></p>
+			<p><img data-brackets-id="82" src="http://drive.google.com/uc?export=view&id=1bEp9aLeVpmLnRcevlcWsWETBFjLmtMwJ" align="left"><span data-brackets-id="83">&nbsp;</span></p> 
+<!--			<p><img data-brackets-id="82" src="resources/images/index/bear.png" align="left"><span data-brackets-id="83">&nbsp;</span></p> -->
 			<p data-brackets-id="81" style="text-align: left; line-height: 1; font-family: &quot;Apple SD Gothic Neo&quot;; font-size: medium; font-variant-ligatures: normal; orphans: 2; widows: 2;" align="left"><span data-brackets-id="84"><span>&nbsp; &nbsp;DevelBear<i></i></span></span></p>
 			<p align="left" style="line-height: 1; font-family: &quot;Apple SD Gothic Neo&quot;; font-size: medium; font-variant-ligatures: normal; orphans: 2; widows: 2;"><br></p>
 			<p align="left"><b>개발 지식 공유 프로젝트 입니다.</b></p>
@@ -46,7 +48,7 @@
 				        <span class="subheadr">웹페이지를 공유하는 서비스입니다.
 				            <br>
 				            한장 한장 웹페이지를 모으면 웹북이 됩니다.</span>
-				        <p class="subbutton list">go<i class="fa fa-hand-o-left" aria-hidden="true"></i></p>
+				        <p class="subbutton list" id = "listGo">go<i class="fa fa-hand-o-left" aria-hidden="true"></i></p>
 			    </li>
 			    <li>
 			        <h1>web</h1>
@@ -55,6 +57,6 @@
 			    </li>
 			</ul>
 		</div>
-	</main>		
+	</main>
 </body>
 </html>
